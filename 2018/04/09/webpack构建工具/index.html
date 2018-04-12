@@ -192,9 +192,14 @@ module.exports = {
 </code></pre><p>`<br>&nbsp;&nbsp;浏览器不兼容CommonJS，原因是浏览器缺少module、exports、require、global四个环境变量。如要使用需要工具转换<br>&nbsp;&nbsp;CommonJS采用同步加载不同模块文件，适用于服务器端。因为模块文件都存放在服务器的各个硬盘上行，读取加载时间快，适合服务器，不适合浏览器</p>
 <h3 id="AMD-CMD"><a href="#AMD-CMD" class="headerlink" title="AMD/CMD"></a>AMD/CMD</h3><p>由于CommonJS不适用于浏览器端，浏览器更希望能够实现异步加载的方式。所以衍生出以下两种流派，一种是适用于浏览器的异步加载(AMD)，一种是基于CommonJS的完善(CMD)：</p>
 <ul>
-<li>AMD<br>&nbsp;&nbsp;&nbsp;&nbsp;AMD规范是异步加载模块，允许指定回调函数。等模块异步加载完成后即可调用回调函数，代表是<strong>require.js</strong>。<em>require.js出来之后AMD规范才被大众熟知</em><br>&nbsp;&nbsp;&nbsp;&nbsp;AMD的核心思想是通过define来定义一个模块，然后使用require来加载一个模块<br>`<br>  // main.js<br>  require([‘jquery’, ‘math’], function($, math){<pre><code>...
-</code></pre>  })<br>  // math.js<br>  define(function(){<pre><code>...
-</code></pre>  })<br>`</li>
+<li>AMD<br>&nbsp;&nbsp;&nbsp;&nbsp;AMD规范是异步加载模块，允许指定回调函数。等模块异步加载完成后即可调用回调函数，代表是<strong>require.js</strong>。<em>require.js出来之后AMD规范才被大众熟知</em><br>&nbsp;&nbsp;&nbsp;&nbsp;AMD的核心思想是通过define来定义一个模块，然后使用require来加载一个模块<br>`<br>  // main.js<br>  require([‘jquery’, ‘math’], function($, math){<pre><code>内容
+</code></pre>  })<br>  // math.js<br>  define(function(){<pre><code>内容
+</code></pre>  })<br>`<br>使用require.js，提前加载所有依赖，方可使用<br>;;;<br><script src="./js/require.js"></script><br>// main.js<br>require.config({<br>  baseUrl: ‘./js/tool’,<br>  paths: {<pre><code>&quot;jquery&quot;: &apos;jquery&apos;,
+&quot;math&quot;: &apos;math&apos;
+</code></pre>  }<br>})<br>// myLib.js<br>define(function(){<br>  return {<pre><code>a: 123
+</code></pre>  }<br>})<br>// math.js<br>define([‘myLib’], function(myLib){<br>  console.log(myLib.a);<br>  function add(x, y){<pre><code>return x + y;
+</code></pre>  }<br>  return {<pre><code>add: add
+</code></pre>  }<br>})<br>// index.js<br>require([‘jquery’, ‘math’], function($, math){<br>  console.log($());<br>  console.log(math.add(1, 2));<br>})</li>
 </ul>
 <h3 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h3><p>&nbsp;&nbsp;在Webpack当中，所有资源都是模块，模块都需要通过AMD或者CMD规范加载，就像CSS样式文件，不再在html中以\&lt;link>标签加载。<strong>任何静态资源都可以视作模块，然后模块之间也可以相互依赖，通过webpack对模块进行处理后，可以打包成想要的静态资源</strong></p>
 <h4 id="webpack支持的功能特性："><a href="#webpack支持的功能特性：" class="headerlink" title="webpack支持的功能特性："></a>webpack支持的功能特性：</h4><ul>
