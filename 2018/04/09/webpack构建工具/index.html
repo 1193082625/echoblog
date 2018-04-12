@@ -194,24 +194,12 @@ module.exports = {
 <ul>
 <li>AMD<br>&nbsp;&nbsp;&nbsp;&nbsp;AMD规范是异步加载模块，允许指定回调函数。等模块异步加载完成后即可调用回调函数，代表是<strong>require.js</strong>。<em>require.js出来之后AMD规范才被大众熟知</em><br>&nbsp;&nbsp;&nbsp;&nbsp;AMD的核心思想是通过define来定义一个模块，然后使用require来加载一个模块<br>  // main.js<br>  require([‘jquery’, ‘math’], function($, math){<pre><code>内容
 </code></pre>  })<br>  // math.js<br>  define(function(){<pre><code>内容
-</code></pre>  })<br>使用require.js，提前加载所有依赖，方可使用<br>  <script src="./js/require.js"></script><br>  // main.js<br>  require.config({<pre><code>baseUrl: &apos;./js/tool&apos;,
-paths: {
-    &quot;jquery&quot;: &apos;jquery&apos;,
-    &quot;math&quot;: &apos;math&apos;
-}
-</code></pre>  })<br>  // myLib.js<br>  define(function(){<pre><code>return {
-    a: 123
-}
-</code></pre>  })<br>  // math.js<br>  define([‘myLib’], function(myLib){<pre><code>console.log(myLib.a);
-function add(x, y){
-    return x + y;
-}
-return {
-    add: add
-}
-</code></pre>  })<br>  // index.js<br>  require([‘jquery’, ‘math’], function($, math){<pre><code>console.log($());
-console.log(math.add(1, 2));
-</code></pre>  })</li>
+</code></pre>  })<br>使用require.js，提前加载所有依赖，方可使用<br>\ javascript<br><script src="./js/require.js"></script><br>// main.js<br>require.config({<br>  baseUrl: ‘./js/tool’,<br>  paths: {<pre><code>&quot;jquery&quot;: &apos;jquery&apos;,
+&quot;math&quot;: &apos;math&apos;
+</code></pre>  }<br>})<br>// myLib.js<br>define(function(){<br>  return {<pre><code>a: 123
+</code></pre>  }<br>})<br>// math.js<br>define([‘myLib’], function(myLib){<br>  console.log(myLib.a);<br>  function add(x, y){<pre><code>return x + y;
+</code></pre>  }<br>  return {<pre><code>add: add
+</code></pre>  }<br>})<br>// index.js<br>require([‘jquery’, ‘math’], function($, math){<br>  console.log($());<br>  console.log(math.add(1, 2));<br>})</li>
 </ul>
 <h3 id="Webpack"><a href="#Webpack" class="headerlink" title="Webpack"></a>Webpack</h3><p>&nbsp;&nbsp;在Webpack当中，所有资源都是模块，模块都需要通过AMD或者CMD规范加载，就像CSS样式文件，不再在html中以\&lt;link>标签加载。<strong>任何静态资源都可以视作模块，然后模块之间也可以相互依赖，通过webpack对模块进行处理后，可以打包成想要的静态资源</strong></p>
 <h4 id="webpack支持的功能特性："><a href="#webpack支持的功能特性：" class="headerlink" title="webpack支持的功能特性："></a>webpack支持的功能特性：</h4><ul>
