@@ -261,6 +261,8 @@
 </tbody>
 </table>
 <p><em>标准写法如表顺序，再在后面添加无前缀的</em></p>
+<h2 id="模拟移动端的meta"><a href="#模拟移动端的meta" class="headerlink" title="模拟移动端的meta"></a>模拟移动端的meta</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> &gt;</span><br></pre></td></tr></table></figure>
+<h2 id="box-shadow-text-shadow"><a href="#box-shadow-text-shadow" class="headerlink" title="box-shadow / text-shadow"></a>box-shadow / text-shadow</h2><p>box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式(outset/inset)]<br>同一个盒子，可以同时加多个阴影，阴影之间用”,”隔开<br>text-shadow: X轴偏移距离 Y轴偏移距离 [阴影模糊半径] 颜色</p>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>垂直方向的margin，即margin-top。父子结构会结合到一起，取最大值，这种现象叫margin塌陷。<br><em>兄弟结构垂直方向的margin是合并的，基于不建议随便改动html结构，所以选择不解决</em><br>可使用bfc(block format context 块级格式化上下文)语法。<br>如果设置bfc，特定的盒子会按照新的语法规则渲染（例，解决margin塌陷）<br>以下语法可触发盒子的bfc(选择合适的使用)：</p>
 <ul>
 <li>position: absolute</li>
