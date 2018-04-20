@@ -264,6 +264,19 @@
 <h2 id="模拟移动端的meta"><a href="#模拟移动端的meta" class="headerlink" title="模拟移动端的meta"></a>模拟移动端的meta</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> &gt;</span><br></pre></td></tr></table></figure>
 <h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><p>css3中有一个可以选择盒模型的属性：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: border-box / content-box</span><br></pre></td></tr></table></figure></p>
 <p>content-box为W3C标准盒子，设置的元素的width不包括padding和border<br>border-box为IE6混杂模式的盒子，设置的元素的width包含padding和border<br><em>例如：设置宽度为百分比的时候可以使用IE6混杂模式</em></p>
+<h2 id="弹性盒模型——flex"><a href="#弹性盒模型——flex" class="headerlink" title="弹性盒模型——flex"></a>弹性盒模型——flex</h2><p><strong>flex必须配合父元素display: flex使用</strong><br>可设置在子元素上的属性：</p>
+<ul>
+<li>flex-grow: num; 根据所设置的比例分配盒子所剩余的空间</li>
+<li>flex-shrink: num; 设置元素的收缩比例——多出盒子的部分，按照比例的大小砍掉相应的大小<br><em>例：盒子400px，三个子元素200px，多出200px；缩减的宽度=(flex-shrink1 \</em> width1) /( flex-shrink1 * width1 + flex-shrink2 * width2)  *  moreWidth*</li>
+<li>flex ; 是flex-grow,flex-shrink和flex-basis的简写</li>
+<li>align-self: auto|flex-start|flex-end|center|baseline|stretch; 允许单个项目与其他项目不一样的对齐方式，可覆盖align-items属性。<br>设置在父容器上的属性：</li>
+<li>flex-direction: row|row-reverse|column|column-reverse; 决定主轴的方向</li>
+<li>flex-wrap: nowrap|wrap|wrap-reverse; 溢出是否换行</li>
+<li>flex-flow 是flex-direction和flex-wrap的简写</li>
+<li>justify-content: flex-start|flex-end|center|space-between|space-around; 项目在主轴上的对齐方式</li>
+<li>align-items: flex-start|flex-end|center|baseline|stretch(占满); 在侧轴上的对齐方式</li>
+<li>align-content:flex-start|flex-end|center|space-between|space-around|stretch; 多根轴线的对齐方式</li>
+</ul>
 <h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p><strong>动画关键帧：@keyframes</strong><br>animation动画会按照keyframes关键帧里面指定的帧状态过渡执行<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义动画demoAnimationName</span></span><br><span class="line">@keyframes demoAnimationName&#123;</span><br><span class="line">	<span class="number">0</span>%&#123;</span><br><span class="line">		color: red</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="number">10</span>%&#123;</span><br><span class="line">		color: green</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="number">100</span>%&#123;</span><br><span class="line">		width: <span class="number">300</span>px;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 帧频里如果只有0%和100%两个关键帧，那么可以用from to代替</span></span><br><span class="line"><span class="comment">// 使用动画</span></span><br><span class="line">div&#123;</span><br><span class="line">	animation: demoAnimationName <span class="number">2</span>s infinite</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>animation属性为css3的复合属性，主要包括以下属性：</p>
 <ul>
