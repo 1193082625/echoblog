@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>MarkDown | ECHO的博客</title>
+<title>js基础1 | ECHO的博客</title>
 
 
 
@@ -124,9 +124,9 @@
                     <p id="process"></p>
 <article class="post">
     <div class="post-head">
-        <h1 id="MarkDown">
+        <h1 id="js基础1">
             
-	            MarkDown
+	            js基础1
             
         </h1>
         <div class="post-meta">
@@ -145,8 +145,8 @@
         <span class="tags-meta">
             
                 
-                    <a href="/echoblog/tags/md" title='md'>
-                        md
+                    <a href="/echoblog/tags/js" title='js'>
+                        js
                     </a>
                 
             
@@ -158,7 +158,7 @@
         
         <span class="fa-wrap">
             <i class="fa fa-clock-o"></i>
-            <span class="date-meta">2018/04/08</span>
+            <span class="date-meta">2018/04/23</span>
         </span>
     
 </div>
@@ -168,15 +168,33 @@
     </div>
     
     <div class="post-body post-content">
-        <h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p># 标题1<br>## 标题2<br>### 标题3</p>
-<h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>在每行或者每段的最前面加&gt;<br>> This is a blockquote</p>
-<h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>``` javascript<br>内容<br>```</p>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>使用 * 、 + 或是 - 作为列表标记<br>有序列表则使用数字接着一个英文句点<br>如果列表项目用空行分开，在输出HTML时Markdown就会将项目内容用&lt;p&gt;标签包起来</p>
-<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>在一行中用三个以上的 * 、 - 、 _ 来建立一个分割线，行内不能有其他元素，也可以在 * 或 - 中间插入空格</p>
-<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>[链接 文字]: <a href="http://baidu.com" target="_blank" rel="noopener">http://baidu.com</a> ‘title内容’</p>
-<h2 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h2><p>被 * 或 _ 包围的字词会被转成用&lt;em&gt;标签包围，用两个 * 或 _ 包起来的话，则会被转成&lt;strong&gt;</p>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>![图片的替代文字](图片地址)<br>到目前为止，Markdown还没有办法指定图片的宽高</p>
-<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a  | b | c  </span><br><span class="line">:-:|:- |-:</span><br><span class="line">    居中    |     左对齐      |   右对齐    </span><br><span class="line">============|=================|=============</span><br></pre></td></tr></table></figure>
+        <h2 id="数据类型——typeof"><a href="#数据类型——typeof" class="headerlink" title="数据类型——typeof"></a>数据类型——typeof</h2><ul>
+<li>number</li>
+<li>string</li>
+<li>boolean</li>
+<li>object</li>
+<li>function</li>
+<li>undefined</li>
+</ul>
+<h2 id="预编译"><a href="#预编译" class="headerlink" title="预编译"></a>预编译</h2><p>预编译发生在函数执行的前一刻<br>1、创建AO(activation objec)活跃对象，即执行期上下文<br>2、将形参和变量声明作为AO属性名，值为undefined<br>3、将实参和形参统一<br>4、找函数声明，值为函数体</p>
+<h2 id="作用域——-scope"><a href="#作用域——-scope" class="headerlink" title="作用域——[[scope]]"></a>作用域——[[scope]]</h2><p>作用域，即[[scope]]，是函数执行期上下文的集合。同时是javascript函数对象中仅供javascript引擎存取的属性</p>
+<p>当函数执行时，会创建一个称为执行期上下文的内部对象。一个执行期上下文定义了一个函数执行时的环境。函数每次执行时对应的执行上下文都是独一无二的，所以多次调用一个函数会导致创建多个执行期上下文，当函数执行完毕，它所产生的执行期上下文被销毁。</p>
+<h2 id="作用域链"><a href="#作用域链" class="headerlink" title="作用域链"></a>作用域链</h2><p>[[scope]]中所存储的执行期上下文对象的集合，这个集合呈链式链接，这种链接叫做作用域链</p>
+<h2 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h2><p>当内部函数被保存到外部时，将会产生闭包，闭包会导致原有作用域链不释放，造成内存泄露。</p>
+<h2 id="立即执行函数"><a href="#立即执行函数" class="headerlink" title="立即执行函数"></a>立即执行函数</h2><ul>
+<li>(function(){}()) // W3C建议使用</li>
+<li>(function(){})()</li>
+</ul>
+<p><strong>只有 表达式 才能被 执行符号 执行</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params"></span>) </span>&#123;&#125;()</span><br><span class="line"><span class="comment">// 不能被执行，会报语法错误，因为这是函数声明</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">'a'</span>);</span><br><span class="line">&#125;()</span><br><span class="line"><span class="comment">// 能被执行，执行结果是控制台会打印a。</span></span><br><span class="line"><span class="comment">// 解析：var test会被忽略，剩下的是函数表达式</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>能被执行符号(‘()’, ‘+’, ‘-‘, ‘!’等，’*’和’/‘不行)执行的表达式，函数的名字会被忽略。</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">a, b, c, d</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(a+b+c+d);</span><br><span class="line">&#125;(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 不报错，系统会理解为：</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">test</span>(<span class="params">a, b, c, d</span>)</span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(a+b+c+d);</span><br><span class="line">&#125;;</span><br><span class="line">(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>);</span><br></pre></td></tr></table></figure></p>
+<h2 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h2><p>内部原理：<br>1、 会在函数体最前面隐式的加上this = {}<br>2、 隐式的执行this.xxx = xxx;<br>3、 隐式的返回this<br>// 如果显示的return {}, 则返回{}；如果return的不是对象，则返回的还是this</p>
+<h2 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h2><p>原型是function对象的一个属性，它定义了构造函数制造出的对象的公共祖先。通过构造函数产生的对象，可以继承该原型的属性和方法，原型也是对象</p>
+<ul>
+<li>可以通过隐式属性<strong>proto</strong>查看原型</li>
+<li>可以通过 obj.constructor 查看对象的构造函数</li>
+</ul>
+<h2 id="原型链"><a href="#原型链" class="headerlink" title="原型链"></a>原型链</h2><p>原型链的连接点就是<strong>proto</strong><br>object.prototype是所有对象的最终原型。即原型链的终端</p>
+<p>undefined和null不能调用toString()，因为它们没有原型，不是对象，不能隐式转换成object，所以没有toString()</p>
 
     </div>
 
@@ -194,11 +212,11 @@
 
 <div class="article-nav prev-next-wrap clearfix">
     
-        <a href="/echoblog/2018/04/09/NodeJS/" class="pre-post btn btn-default" title='NodeJS'>
-            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
-            <span class="hidden-xs">NodeJS</span>
-        </a>
     
+        <a href="/echoblog/2018/04/12/模块化/" class="next-post btn btn-default" title='模块化'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">模块化</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
     
 </div>
 
