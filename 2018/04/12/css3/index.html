@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <!--Setting-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="apple-mobile-web-app-capable" content="ECHO的博客">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="browsermode" content="application">
+    <meta name="screen-orientation" content="portrait">
+    <link rel="dns-prefetch" href="http://yoursite.com">
+    <!--SEO-->
+
+
+
+
+
+<meta name="robots" content="all" />
+<meta name="google" content="all" />
+<meta name="googlebot" content="all" />
+<meta name="verify" content="all" />
+    <!--Title-->
+
+
+<title>CSS3 | ECHO的博客</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+    
+
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css?rev=3.3.4">
+<link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/echoblog/css/style.css?rev=@@hash">
+
+
+
+
+    
+	<div class="hide">
+		<script type="text/javascript">
+			var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan class='cnzz_stat_icon_1263868967 hide' %3E%3Cscript%20src%3D%22https%3A%2F%2Fs95.cnzz.com%2Fz_stat.php%3Fweb_id%3D1272564536%22%3E%3C%2Fscript%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1263868967%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+	</div>
+
+
+
+
+
+
+    
+</head>
+
+
+<!--[if lte IE 8]>
+<style>
+    html{ font-size: 1em }
+</style>
+<![endif]-->
+<!--[if lte IE 9]>
+<div style="ie">你使用的浏览器版本过低，为了你更好的阅读体验，请更新浏览器的版本或者使用其他现代浏览器，比如Chrome、Firefox、Safari等。</div>
+<![endif]-->
+
+<body>
+    <header class="main-header"  style="background-image:url(http://7xpw2b.com1.z0.glb.clouddn.com/hexo-sinppet/img/banner2.jpg)"  >
+    <div class="main-header-box">
+        <a class="header-avatar" href="/echoblog/" title='ECHO'>
+            <img src="/echoblog/img/avatar.jpg" alt="logo头像" class="img-responsive center-block">
+        </a>
+        <div class="branding">
+        	<!--<h2 class="text-hide">Snippet主题,从未如此简单有趣</h2>-->
+            
+                 <img src="/echoblog/img/branding.png" alt="Snippet 博客主题" class="img-responsive center-block">
+            
+    	</div>
+    </div>
+</header>
+    <nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                    <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/echoblog/"><i class="fa "></i>首页</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/echoblog/categories/前端/"><i class="fa "></i>前端</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/echoblog/categories/后端/"><i class="fa "></i>后端</a>
+                            </li>
+                        
+                            <li role="presentation" class="text-center">
+                                <a href="/echoblog/categories/工具/"><i class="fa "></i>工具</a>
+                            </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+    <section class="content-wrap">
+        <div class="container">
+            <div class="row">
+                <main class="col-md-8 main-content m-post">
+                    <p id="process"></p>
+<article class="post">
+    <div class="post-head">
+        <h1 id="CSS3">
+            
+	            CSS3
+            
+        </h1>
+        <div class="post-meta">
+    
+    
+    <span class="categories-meta fa-wrap">
+        <i class="fa fa-folder-open-o"></i>
+        <a href="/echoblog/categories/前端">
+            前端
+        </a>
+    </span>
+    
+    
+    <span class="fa-wrap">
+        <i class="fa fa-tags"></i>
+        <span class="tags-meta">
+            
+                
+                    <a href="/echoblog/tags/css3" title='css3'>
+                        css3
+                    </a>
+                
+            
+        </span>
+    </span>
+    
+
+    
+        
+        <span class="fa-wrap">
+            <i class="fa fa-clock-o"></i>
+            <span class="date-meta">2018/04/12</span>
+        </span>
+    
+</div>
+
+            
+            
+    </div>
+    
+    <div class="post-body post-content">
+        <h2 id="主流浏览器"><a href="#主流浏览器" class="headerlink" title="主流浏览器"></a>主流浏览器</h2><p>浏览器主要包括外壳和内核</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">浏览器</th>
+<th style="text-align:center">内核</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">IE</td>
+<td style="text-align:center">trident</td>
+</tr>
+<tr>
+<td style="text-align:center">Firefox</td>
+<td style="text-align:center">Gecko</td>
+</tr>
+<tr>
+<td style="text-align:center">Google chrome</td>
+<td style="text-align:center">webkit / blink(新2014)</td>
+</tr>
+<tr>
+<td style="text-align:center">Safari</td>
+<td style="text-align:center">webkit</td>
+</tr>
+<tr>
+<td style="text-align:center">Opera</td>
+<td style="text-align:center">presto</td>
+</tr>
+</tbody>
+</table>
+<h2 id="css权重"><a href="#css权重" class="headerlink" title="css权重"></a>css权重</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">样式</th>
+<th style="text-align:center">权重</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">!important</td>
+<td style="text-align:center">Infinity</td>
+</tr>
+<tr>
+<td style="text-align:center">行间样式</td>
+<td style="text-align:center">1000</td>
+</tr>
+<tr>
+<td style="text-align:center">#id</td>
+<td style="text-align:center">100</td>
+</tr>
+<tr>
+<td style="text-align:center">.class/属性/伪类</td>
+<td style="text-align:center">10</td>
+</tr>
+<tr>
+<td style="text-align:center">标签/伪元素</td>
+<td style="text-align:center">1</td>
+</tr>
+<tr>
+<td style="text-align:center">通配符</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>css权重是256进制（255进1），同排的选择器将其权重值相加</strong></p>
+<h2 id="CSS3前缀"><a href="#CSS3前缀" class="headerlink" title="CSS3前缀"></a>CSS3前缀</h2><table>
+<thead>
+<tr>
+<th style="text-align:center">前缀</th>
+<th style="text-align:center">浏览器 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">-webkit</td>
+<td style="text-align:center">chrome和safrai</td>
+</tr>
+<tr>
+<td style="text-align:center">-mox</td>
+<td style="text-align:center">firefox </td>
+</tr>
+<tr>
+<td style="text-align:center">-ms</td>
+<td style="text-align:center">IE</td>
+</tr>
+<tr>
+<td style="text-align:center">-o</td>
+<td style="text-align:center">opera</td>
+</tr>
+</tbody>
+</table>
+<p><em>标准写法如表顺序，再在后面添加无前缀的</em></p>
+<h2 id="模拟移动端的meta"><a href="#模拟移动端的meta" class="headerlink" title="模拟移动端的meta"></a>模拟移动端的meta</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name=<span class="string">"viewport"</span> content=<span class="string">"width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"</span> &gt;</span><br></pre></td></tr></table></figure>
+<h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><p>css3中有一个可以选择盒模型的属性：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: border-box / content-box</span><br></pre></td></tr></table></figure></p>
+<p>content-box为W3C标准盒子，设置的元素的width不包括padding和border<br>border-box为IE6混杂模式的盒子，设置的元素的width包含padding和border<br><em>例如：设置宽度为百分比的时候可以使用IE6混杂模式</em></p>
+<h2 id="弹性盒模型——flex"><a href="#弹性盒模型——flex" class="headerlink" title="弹性盒模型——flex"></a>弹性盒模型——flex</h2><p><strong>flex必须配合父元素display: flex使用</strong><br><strong>可设置在子元素上的属性：</strong></p>
+<ul>
+<li>flex-grow: num; 根据所设置的比例分配盒子所剩余的空间</li>
+<li>flex-shrink: num; 设置元素的收缩比例——多出盒子的部分，按照比例的大小砍掉相应的大小<br><em>例：盒子400px，三个子元素200px，多出200px；缩减的宽度=(flex-shrink1 \</em> width1) /( flex-shrink1 * width1 + flex-shrink2 * width2)  *  moreWidth*</li>
+<li>flex ; 是flex-grow,flex-shrink和flex-basis的简写</li>
+<li>align-self: auto|flex-start|flex-end|center|baseline|stretch; 允许单个项目与其他项目不一样的对齐方式，可覆盖align-items属性。</li>
+</ul>
+<p><strong>可设置在父容器上的属性：</strong></p>
+<ul>
+<li>flex-direction: row|row-reverse|column|column-reverse; 决定主轴的方向</li>
+<li>flex-wrap: nowrap|wrap|wrap-reverse; 溢出是否换行</li>
+<li>flex-flow 是flex-direction和flex-wrap的简写</li>
+<li>justify-content: flex-start|flex-end|center|space-between|space-around; 项目在主轴上的对齐方式</li>
+<li>align-items: flex-start|flex-end|center|baseline|stretch(占满); 在侧轴上的对齐方式</li>
+<li>align-content:flex-start|flex-end|center|space-between|space-around|stretch; 多根轴线的对齐方式</li>
+</ul>
+<h2 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h2><p><strong>动画关键帧：@keyframes</strong><br>animation动画会按照keyframes关键帧里面指定的帧状态过渡执行<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义动画demoAnimationName</span></span><br><span class="line">@keyframes demoAnimationName&#123;</span><br><span class="line">	<span class="number">0</span>%&#123;</span><br><span class="line">		color: red</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="number">10</span>%&#123;</span><br><span class="line">		color: green</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="number">100</span>%&#123;</span><br><span class="line">		width: <span class="number">300</span>px;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 帧频里如果只有0%和100%两个关键帧，那么可以用from to代替</span></span><br><span class="line"><span class="comment">// 使用动画</span></span><br><span class="line">div&#123;</span><br><span class="line">	animation: demoAnimationName <span class="number">2</span>s infinite</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>animation属性为css3的复合属性，主要包括以下属性：</p>
+<ul>
+<li>~ -name: 执行动画的keyframe名</li>
+<li>~ -duration: 动画执行的时间</li>
+<li>~ -time-function: 过渡函数速率</li>
+<li>~ -delay: 执行延迟时间</li>
+<li>~ -direction(动画播放方向): normal/reverse(反向播放)/alternate(奇数次正向，偶数次反向)/alternate-reverse(奇数词反向，偶数次正向)</li>
+<li>~ -iteration-count(动画的播放次数): infinite(无限次)/num(播放次数)</li>
+<li>~ -fill-mode(定义动画在开始之前喝结束之后发生的操作): forwards(当动画完成后，保持最后一个属性值)/backwards(会在向元素应用动画样式时迅速应用动画的初始帧)/both(同时具有forwards和backwards效果)/none</li>
+</ul>
+<p>控制元素动画的播放状态<br>animation-play-state: running/paused</p>
+<h2 id="3D动画"><a href="#3D动画" class="headerlink" title="3D动画"></a>3D动画</h2><p><strong>transform-style，需要设置在父元素中，高于任何嵌套的变形元素</strong><br>transform-style: flat(子元素将不保留其3D位置)|preserve-3d(子元素保留其3D位置)<br>设置了transform-style: preserve-3d的元素，就不能防止子元素溢出设置overflow:hidden;否则会导致preserve-3d失效</p>
+<p><strong>perspective——景深</strong><br>可以简单的把perspective理解成人距离显示器的距离，此值越大效果越差，越小效果越好</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">例：perspective: <span class="number">600</span>px;<span class="comment">//物体距离人眼的距离是600px;</span></span><br><span class="line">.stage&#123;</span><br><span class="line">	perspective: <span class="number">600</span>px;</span><br><span class="line">&#125;</span><br><span class="line">.stage .box&#123;</span><br><span class="line">	transform: perspective(<span class="number">600</span>px);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 当有多个变形元素时，第一种只有一个透视点，第二种每一个变形元素都有一个透视点</span></span><br></pre></td></tr></table></figure>
+<p><strong>backface-visibility: visible|hidden</strong> 在元素运动过程中，能否展示元素的背面</p>
+<p><strong>3d旋转，元素在转，坐标轴也跟着转</strong><br><em>相同的元素，其中一个设置了rotateY(180deg)，然后同时设置了translateZ(100px);这时，他们在空间的距离是200px,而不是0</em></p>
+<p><strong>注意：</strong></p>
+<ul>
+<li>动画尽可能使用css3，而不是js。一个元素通过translate3d右移500px的动画流畅度会明显优于使用left属性</li>
+<li>尽可能少的使用box-shadow与gradients，这两个都是页面性能杀手，能避免尽量避免</li>
+<li>尽可能的让动画元素脱离文档流(position:fixed;position:absolute)，以减少页面重排</li>
+</ul>
+<h2 id="css3变形——transform"><a href="#css3变形——transform" class="headerlink" title="css3变形——transform"></a>css3变形——transform</h2><p>可以实现元素的形状、角度、位置等变化<br>属性值：</p>
+<ul>
+<li>rotate(角度值); 以x/y/z为轴进行旋转，默认z；rotateX(角度值), rotateY(), rotateZ(), rotate3d(x, y, z, 角度)，单位deg</li>
+<li>scale(x, y); 以x/y为轴进行缩放，如果第二个参数未提供，则第二个参数使用第一个参数的值，值是数字表示倍数，不加任何单位</li>
+<li>skew(x, y); 对元素进行倾斜扭曲，如果第二个参数未提供，则默认值为0</li>
+<li>translate(x, [y]); 相对于自身位置移动距离</li>
+</ul>
+<p>transform-origin:(x, y) 变换原点，默认情况下，其中心点是居于元素x轴和y轴的50%处</p>
+<h2 id="过渡动画——transition"><a href="#过渡动画——transition" class="headerlink" title="过渡动画——transition"></a>过渡动画——transition</h2><p>transition属性是复合属性，主要包括：</p>
+<ul>
+<li>~ -property: 指定过渡或动态模拟的css属性</li>
+<li>~ -duration: 指定过渡所需时间</li>
+<li>~ -timing-function: 指定过渡函数(linear(匀速)/ease(慢-快-慢)/ease-in(以慢速开始)/ease-out(以慢速结束)/ease-in-out(以慢速开始和结束)/cubic-bezier(n, n, n, n))</li>
+<li>~ -delay: 延迟时间<br>示例：<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">	width: <span class="number">100</span>px;</span><br><span class="line">	transition: width <span class="number">2</span>s;</span><br><span class="line">&#125;</span><br><span class="line">div:hover&#123;</span><br><span class="line">	width: <span class="number">300</span>px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="媒体查询——-media"><a href="#媒体查询——-media" class="headerlink" title="媒体查询——@media"></a>媒体查询——@media</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> media=<span class="string">"screen and (max-width:800px)"</span> href=<span class="string">"index.css"</span>&gt;</span><br><span class="line">&lt;style type=<span class="string">"text/css"</span>&gt;</span><br><span class="line">	@media (max-width:<span class="number">600</span>px)&#123;</span><br><span class="line">		.div&#123;</span><br><span class="line">			display: none</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;<span class="regexp">/style&gt;</span></span><br><span class="line"><span class="regexp">@media screen and (max-width: 800px) and (min-width: 600px) &#123;</span></span><br><span class="line"><span class="regexp">	div&#123;</span></span><br><span class="line"><span class="regexp">		color: red;</span></span><br><span class="line"><span class="regexp">	&#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br></pre></td></tr></table></figure>
+<h2 id="font-face"><a href="#font-face" class="headerlink" title="font-face"></a>font-face</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@font-face&#123;</span><br><span class="line">	font-family: <span class="string">"myfontName"</span>,</span><br><span class="line">	src: url(<span class="string">'./font/fontname.ttf'</span>);</span><br><span class="line">&#125;</span><br><span class="line">p&#123;</span><br><span class="line">	font-family: <span class="string">'myfontName'</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一般对英文有用</p>
+<h2 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h2><h4 id="线性渐变-——-向下-向上-向左-向右-对角"><a href="#线性渐变-——-向下-向上-向左-向右-对角" class="headerlink" title="线性渐变 —— 向下/向上/向左/向右/对角"></a>线性渐变 —— 向下/向上/向左/向右/对角</h4><p>语法： linear-gradient([direction]，颜色值，颜色值，颜色值…)<br>direction角度的单位为“deg”，也可以用to bottom, to left, to top left等方式来表达</p>
+<h4 id="径向渐变-——-由中心定义"><a href="#径向渐变-——-由中心定义" class="headerlink" title="径向渐变 —— 由中心定义"></a>径向渐变 —— 由中心定义</h4><p>语法： radial-gradient(形状，圆心位置(可以两个值也可以一个值)，颜色值，颜色值，颜色值…)</p>
+<h2 id="box-shadow-text-shadow"><a href="#box-shadow-text-shadow" class="headerlink" title="box-shadow / text-shadow"></a>box-shadow / text-shadow</h2><p>box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式(outset/inset)]<br>同一个盒子，可以同时加多个阴影，阴影之间用”,”隔开<br>text-shadow: X轴偏移距离 Y轴偏移距离 [阴影模糊半径] 颜色</p>
+<h2 id="多列布局-——-columns"><a href="#多列布局-——-columns" class="headerlink" title="多列布局 —— columns"></a>多列布局 —— columns</h2><p>主要应用在文本的多列布局方面<br>column-width: 指定每一列的宽度<br>column-count: 指定分布成多少列<br>两个属性如果一起使用会乱<br>column-gap: 设置列与列之间的宽度<br>如果没有设置该属性，其值的大小会根据浏览器默认的font-size来定<br>column-rule-width: 类似于border-width属性，主要用来定义边框的宽度<br>column-rule-style: 类似于border-style属性，主要用来定义列边框样式<br>column-rule-color: 颜色</p>
+<h2 id="浏览器渲染"><a href="#浏览器渲染" class="headerlink" title="浏览器渲染"></a>浏览器渲染</h2><p>1、处理html生成DOM树<br>2、处理css生成CSSDOM树<br>3、两树合并生成render树<br>4、对render树进行布局计算<br>5、将render树种的每一个节点绘制到屏幕上<br>当一些属性和方法(offsetTop,scrollTop，currentStyle()等)需要返回最新的布局信息，重新计算渲染树，就会造成回流，触发重排以返回正确的值。可以将他们合并到一起操作，减少回流次数<br>每个页面至少需要一次回流，就是在页面第一次加载的时候。<br>当render树中的一些元素需要更新属性，而这些属性只是影响元素的外观，风格，而不影响布局的，称为重绘。<br>提高网页性能，就是要降低重排和重绘的频率和成本，尽量少触发重新渲染</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>垂直方向的margin，即margin-top。父子结构会结合到一起，取最大值，这种现象叫margin塌陷。<br><em>兄弟结构垂直方向的margin是合并的，基于不建议随便改动html结构，所以选择不解决</em><br>可使用bfc(block format context 块级格式化上下文)语法。<br>如果设置bfc，特定的盒子会按照新的语法规则渲染（例，解决margin塌陷）<br>以下语法可触发盒子的bfc(选择合适的使用)：</p>
+<ul>
+<li>position: absolute</li>
+<li>display: inline-block</li>
+<li>float: left/right</li>
+<li>overflow: hidden</li>
+</ul>
+<p>产生了bfc的元素和文本类属性（凡是带有inline的元素都有文字特性）以及文本都能看到浮动元素<br>凡是设置了position:absolute或float:left/right的元素，都会从内部把该元素转换成inline-block</p>
+
+    </div>
+
+    <div class="post-footer">
+        <div>
+            
+                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="https://1193082625.github.io/echoblog/" target="_blank">ECHO的博客</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</article>
+
+<div class="article-nav prev-next-wrap clearfix">
+    
+        <a href="/echoblog/2018/04/12/模块化/" class="pre-post btn btn-default" title='模块化'>
+            <i class="fa fa-angle-left fa-fw"></i><span class="hidden-lg">上一篇</span>
+            <span class="hidden-xs">模块化</span>
+        </a>
+    
+    
+        <a href="/echoblog/2018/04/09/webpack构建工具/" class="next-post btn btn-default" title='webpack构建工具'>
+            <span class="hidden-lg">下一篇</span>
+            <span class="hidden-xs">webpack构建工具</span><i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</div>
+
+
+    <div id="comments">
+        
+	<!--PC和WAP自适应版-->
+<div id="SOHUCS"></div>
+<script type="text/javascript">
+	(function(){var appid='cyt8KmUC1';var conf='prod_855a68d3b3d91855360a6215672a505a';var width=window.innerWidth||document.documentElement.clientWidth;if(width<960){window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id='+appid+'&conf='+conf+'"><\/script>');}else{var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}
+	c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})});}})();
+</script>	
+
+    </div>
+
+
+
+
+
+                </main>
+                
+    <aside class="col-md-4 sidebar">
+        
+        
+    <div class="widget">    
+        <h3 class="title">搜索</h3>
+        <div id="search-form">
+            <div id="result-mask" class="hide"></div>
+            <div class="search-area">
+                
+                    <input id="search-key" type="search" autocomplete="off" placeholder="搜点什么呢?">
+                    <button type="button" class="search-form-submit" id="search-local">站内搜索</button>
+                
+                
+            </div>
+            <div id="result-wrap" class="hide">
+                <div id="search-result"></div>
+            </div>
+            <div class="hide">
+                <template id="search-tpl">
+                    <div class="item">
+                        <a href="/echoblog/{path}" title="{title}">
+                            <div class="title">{title}</div>
+                            <div class="content">{content}</div>
+                        </a>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget notification">
+        <h3 class="title">网站公告</h3>
+        <div>
+            <p>欢迎来到我的个人博客！</p>
+        </div>
+    </div>
+
+        
+        
+    <div class="widget">
+      <h3 class="title">归档</h3>
+        <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/echoblog/archives/2018/04/"><i class="fa" aria-hidden="true">四月 2018</i></a><span class="archive-list-count">8</span></li></ul>
+    </div>
+
+
+        
+        
+  <div class="widget">
+    <h3 class="title">标签云</h3>
+    <div class="content tag-cloud">
+        <a href="/echoblog/tags/AMD/" style="font-size: 10px;">AMD</a> <a href="/echoblog/tags/CMD/" style="font-size: 10px;">CMD</a> <a href="/echoblog/tags/CommonJS/" style="font-size: 10px;">CommonJS</a> <a href="/echoblog/tags/css3/" style="font-size: 10px;">css3</a> <a href="/echoblog/tags/js/" style="font-size: 10px;">js</a> <a href="/echoblog/tags/md/" style="font-size: 10px;">md</a> <a href="/echoblog/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/echoblog/tags/构建工具/" style="font-size: 20px;">构建工具</a> <a href="/echoblog/tags/模块化/" style="font-size: 10px;">模块化</a>
+    </div>
+  </div>
+
+
+        
+        
+    <div class="widget">
+      <h3 class="title">社交</h3> 
+        <div class="content social">
+            
+	            <a href="//github.com/1193082625" rel="external nofollow" title="Github" target="_blank">
+			    	<i class="git fa fa-git"></i>
+			    </a>
+            
+	            <a href="mailto:1193082625@qq.com" rel="external nofollow" title="邮箱" target="_blank">
+			    	<i class="envelope-o fa fa-envelope-o"></i>
+			    </a>
+            
+        </div>
+    </div>
+
+
+        
+    </aside>
+
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+    <div class="container">
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<a id="back-to-top" class="hide">
+	<i class="fa fa-chevron-up"></i>
+</a>
+
+
+
+
+    <div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <span>Copyright &copy; 2017
+                </span> | 
+                <span>
+                    Powered by <a href="//hexo.io" class="copyright-links" target="_blank" rel="nofollow">Hexo</a>
+                </span> | 
+                <span>
+                    Theme by <a href="//github.com/shenliyang/hexo-theme-snippet.git" class="copyright-links" target="_blank" rel="nofollow">Snippet</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+	<script src="/echoblog/js/search.js?rev=@@hash"></script>
+
+
+<script src="/echoblog/js/app.js?rev=@@hash"></script>
+
+
+</body>
+</html>
